@@ -1,0 +1,109 @@
+.btn{
+    display: flex;
+    align-items: center;
+    background: var(--clr-main);
+    padding: .5rem 2rem;
+    border-radius: 1.5rem;
+    text-decoration: none;
+}
+
+.like-btn{
+    position: absolute;
+    background: var(--clr-white);
+    border-radius: .5rem;
+    border: none;
+    top: 1rem;
+    right: 2rem;
+}
+
+.search-btn{
+    display: inline-block;
+    color: var(--clr-white);
+}
+
+.view-all-btn{
+    background: var(--clr-main-bg);
+    color: var(--clr-main);
+    margin-top: 1rem;
+    border: .1rem solid var(--clr-main);
+}
+
+.activity-price{
+    display: block;
+    position: absolute;
+    background: var(--clr-white);
+    color: var(--clr-main);
+    text-align: center;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    padding: .5rem 2rem;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.activity-thumb{
+    display: flex;
+    position: relative;
+    padding: 0 1rem;
+}
+
+.activity-icon{
+    margin: auto;
+}
+
+.activity-image{
+    display: block;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.read-btn{
+    display: block;
+    width: 50%;
+    margin: auto;
+    background: var(--clr-gray);
+    color: var(--clr-gray-text);
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    transition: all .3s ease-in-out;
+}
+
+.read-btn:hover{
+    background: var(--clr-main);
+    color: var(--clr-white);
+}
+
+.submit-btn{
+    background: url(../../imgs/icons/send.svg) var(--clr-main);
+    border: none;
+    background-repeat: no-repeat;
+    border-radius: .75rem;
+    background-position: center;
+    padding: .75rem 1.25rem;
+    cursor: pointer;
+}
+
+.booking-btn{
+    margin-top: 3rem;
+    background: var(--clr-main);
+    border: none;
+    color: var(--clr-white);
+    cursor: pointer;
+}
+
+.login-btn{
+    margin: auto;
+    width: 20%;
+    background: #000;
+    color: #fff;
+    padding: 0.5rem;
+}
+
+.subscribe-image{
+    display: block;
+    margin: auto;
+    width: 75%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}

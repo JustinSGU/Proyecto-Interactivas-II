@@ -1,0 +1,64 @@
+.activities-container{
+    display: grid;
+    width: 80vw;
+    margin: 2rem auto;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.booking-container{
+    margin-top: 2rem;
+}
+
+.form-container{
+    text-align: left;
+}
+
+.form-items{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    margin: .5rem 0;
+    align-items: center;
+    height: 2rem;
+}
+
+.form-input{
+    width: 70%;
+}
+
+.activity{
+    display: grid;
+    background: var(--clr-white);
+    border-radius: 2rem;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.in-touch{
+    display: grid;
+    align-items: center;
+    align-content: center;
+    margin-left: 3rem;
+}
+
+.subscribe{
+    border-radius: 2rem;
+    background: var(--clr-inner-bg);
+}
+
+.cta-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.destinations-container{
+    text-align: center;
+}
+
+.cta-app-container{
+    display: flex;
+    gap: .5rem;
+}

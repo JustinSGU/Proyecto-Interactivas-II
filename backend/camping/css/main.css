@@ -1,0 +1,45 @@
+/*
+    abstracts
+    vendors
+    base
+    layout
+    components
+    pages
+*/
+
+@import url('./abstracts/vars.css');
+
+@import url('./base/base.css');
+@import url('./base/typography.css');
+
+@import url('./layout/footer.css');
+@import url('./layout/forms.css');
+@import url('./layout/grid.css');
+@import url('./layout/header.css');
+@import url('./layout/navigation.css');
+
+@import url('./components/components.css');
+
+.margin-none{
+    margin: 0;
+}
+
+/* media queries */
+/* landscape phone - less than 768px */
+@media (max-width: 767.98px){
+
+    .in-touch{
+        margin: 0 1rem 2rem;
+        text-align: center;
+        order: 2;
+    }
+
+    .subscribe-image{
+        margin-bottom: 0;
+    }
+
+    .subscribe-title{
+        margin: auto;
+    }
+
+}

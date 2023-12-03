@@ -1,0 +1,33 @@
+.footer-container{
+    border-top-left-radius: 6rem;
+    border-top-right-radius: 6rem;
+    background: var(--clr-inner-bg);
+    width: 100%;
+    display: grid;
+    margin: 2rem 0 0;
+}
+
+.footer-content{
+    display: grid;
+    width: 80vw;
+    margin: 2rem auto;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.footer-links{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.nav-bottom-list{
+    padding: 0;
+    list-style-type: none;
+}
+
+.download-app{
+    display: grid;
+    width: 80vw;
+    margin: auto;
+}

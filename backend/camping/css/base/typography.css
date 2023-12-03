@@ -1,0 +1,77 @@
+.hero-title{
+    font-family: var(--ff-main);
+    font-size: clamp(var(--fs-lg), 4rem, var(--fs-xl));
+}
+
+.hero-text{
+    font-size: var(--fs-md);
+    width: clamp(30ch, 50%, 55ch);
+    margin: 0 auto 2rem;
+}
+
+.activity-title{
+    margin: 1rem 0 0;
+    font-size: var(--fs-md);
+    font-family: var(--ff-main);
+}
+
+.activity-category{
+    font-size: var(--fs-sm);
+    font-style: italic;
+}
+
+.activity-text{
+    font-size: var(--fs-nm);
+}
+
+.activity-tours{
+    list-style-type: none;
+}
+
+.destination-price{
+    font-family: var(--ff-main);
+    font-size: var(--fs-md);
+    font-style: italic;
+}
+
+.price-small{
+    font-style: italic;
+}
+
+.checkout{
+    font-family: var(--ff-main);
+    font-size: var(--fs-xsm);
+    text-align: right;
+}
+
+.destination-extra{
+    font-size: var(--fs-sm);
+}
+
+.destinations-title{
+    font-family: var(--ff-main);
+    font-size: clamp(var(--fs-md), 1.875rem, var(--fs-lg));
+    margin: 1rem auto;
+    width: 17ch;
+}
+
+.terms{
+    text-align: left;
+    font-style: italic;
+}
+
+.subscribe-title{
+    font-size: clamp(2rem, 2.25rem, var(--fs-lg));
+    width: min(80%, 90%, 100%);
+}
+
+.nav-bottom-link{
+    color: var(--clr-black);
+    font-size: var(--fs-md);
+    text-decoration: none;
+}
+
+.footer-legal{
+    text-align: center;
+    font-size: var(--fs-md);
+}

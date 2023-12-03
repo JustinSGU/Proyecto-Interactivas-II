@@ -1,0 +1,95 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"php tag": {
+		"prefix": "ptag",
+		"body": [
+			"<?php \n\t$1\n?>"
+		],
+		"description": "Create PHP tag"
+	},
+	"Medoo load library": {
+		"prefix": "mdinsert",
+		"body": [
+			"namespace Medoo;\nrequire 'Medoo.php';\n"
+		],
+		"description": "Load Medoo library"
+	},
+	"Medoo require database connection file": {
+		"prefix": "mdreq",
+		"body": [
+			"require 'database.php'"
+		],
+		"description": "Medoo database connection file"
+	},
+	"Medoo DB connection": {
+		"prefix": "mdcon",
+		"body": [
+			"$BLOCK_COMMENT_START \n- For Laragon: username='root' / password=''\n- For MAMP: username='root' / password='root'\n  $BLOCK_COMMENT_END\n$$database = new Medoo([\n\t'type'=>'mysql',\n\t'host' => 'localhost',\n\t'database' => '${1:database_name}',\n\t'username' => '${2:database_admin_username}',\n\t'password' => '${3:database_admin_password}'\n]);"
+		],
+		"description": "Medoo MySQL connection"
+	},
+	"Medoo DB insert": {
+		"prefix": "mdinsert",
+		"body": [
+			"$LINE_COMMENT Reference: https://medoo.in/api/insert\n$$database->insert(\"${1:table_name}\",[\n\t\"${2:table_column_name}\"=>${3:value_to_insert},\n\t\"${4:table_column_name}\"=>${5:value_to_insert}\n]);"
+		],
+		"description": "Medoo insert to database"
+	},
+	"Medoo DB select all": {
+		"prefix": "mdall",
+		"body": [
+			"$LINE_COMMENT Reference: https://medoo.in/api/select\n$$database->select(\"${1:table_name}\",\"*\");"
+		],
+		"description": "Medoo select all from table"
+	},
+	"Medoo DB select using where": {
+		"prefix": "mdwhere",
+		"body": [
+			"$LINE_COMMENT Reference: https://medoo.in/api/where\n$$database->select(\"${1:table_name}\",\"${2:column_name_to_select}\",[\n\t\"${3:column_name_to_search}\"=>${4:value}\n]);"
+		],
+		"description": "Medoo select from table using where clause"
+	},
+	"Medoo DB update": {
+		"prefix": "mdupdate",
+		"body": [
+			"$LINE_COMMENT Reference: https://medoo.in/api/update\n$$database->update(\"${1:table_name}\",[\n\t\"${2:column_name_to_update}\"=>${3:value},\n\t\"${4:column_name_to_update}\"=>${5:value}\n],[\n\t\"${6:column_name_to_search}\"=>${7:value}\n]);"
+		],
+		"description": "Medoo update columns"
+	},
+	"Medoo DB delete": {
+		"prefix": "mddelete",
+		"body": [
+			"$LINE_COMMENT Reference: https://medoo.in/api/delete\n$$database->delete(\"${1:table_name}\",[\n\t\"${2:column_name_to_search}\"=>${3:value}\n]);"
+		],
+		"description": "Medoo delete columns"
+	},
+	"Medoo DB select using inner join": {
+		"prefix": "mdinner",
+		"body": [
+			"$LINE_COMMENT Reference: https://medoo.in/api/select\n$LINE_COMMENT Note: don't delete the [>] \n$$database->select(\"${1:table_name}\",[\n\t\"[>]${2:table_to_join}\"=>[${3:column_table1} => ${4:column_table2}]\n],[\n\t${5:table_name1.column},\n\t${6:table_name2.column}\n]);"
+		],
+		"description": "Medoo table joining using inner join"
+	},
+	"VueJS component snippet": {
+		"prefix": "vuecomp",
+		"body":[
+			"app.component('click-counter', {\ndata(){\nreturn{\n}\n},\ntemplate:\n/*html*/\n`<div></div>`\n})"
+		],
+		"description": "VueJS component snippet"
+	}
+}

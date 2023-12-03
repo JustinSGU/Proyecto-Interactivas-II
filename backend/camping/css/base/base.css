@@ -1,0 +1,11 @@
+html{
+    font-size: 16px;
+}
+
+body{
+    background: var(--clr-main-bg);
+    display: grid;
+    font-family: var(--ff-secondary);
+    margin: 0;
+    padding: 0;
+}
